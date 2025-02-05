@@ -1,5 +1,5 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 from ridge import Ridge
 from sklearn.metrics import accuracy_score

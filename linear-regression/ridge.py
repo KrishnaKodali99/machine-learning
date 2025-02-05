@@ -20,8 +20,6 @@ class Ridge:
         # Solving least squares problem: ŷ = (X'ᵀX' + λI) . X'ᵀy
         w_prime = np.linalg.pinv(XtX + self.lambda_ * I) @ XtY
 
-        # w_prime = np.linalg.solve(XtX + (self.lambda_) * I, XtY)
-
         self.intercept = w_prime[0]
         self.weights = w_prime[1:]
 
